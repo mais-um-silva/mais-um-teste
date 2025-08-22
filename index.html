@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Título do Site</title>
+  <link href="estilo.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id="box">
+    <div id="topo">
+      <h1 style="text-align:center;">Floresça Tour</h1>
+      <h2 style="text-align:center;">Turismo em Belém do Pará</h2>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html" title="Home">Início</a></li>
+        <li><a href="História.html" title="Como começamos?">História</a></li>
+        <li style="position: relative;">
+          <a href="Pacotes.html" title="O que oferecemos?">Pacotes</a>
+          <span style="cursor:pointer; margin-left:6px;" onclick="toggleSubMenu(event)">▼</span>
+          <ul id="submenu" style="display: none; margin-left: 20px;">
+            <li><a href="Serviço 1.html">Pacote 1</a></li>
+            <li><a href="Serviço 2.html">Pacote 2</a></li>
+            <li><a href="Serviço 3.html">Pacote 3</a></li>
+            <li><a href="Serviço 4.html">Pacote 4</a></li>
+          </ul>
+        </li>
+        <li><a href="Atividades.html" title="O que fazer?">Atividades</a></li>
+        <li><a href="Notícias.html" title="O que está acontecendo?">Notícias</a></li>
+        <li><a href="Fale Conosco.html" title="SAC">Fale Conosco</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleSubMenu(event) {
+        event.stopPropagation();
+        var submenu = document.getElementById('submenu');
+        submenu.style.display = submenu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+    <div id="bloco-centro">
+      <p>
+        Olá, Somos a Floresça Tour e estamos aqui para disponibilizar os melhores pacotes de Turismo em Belém do Pará para você.<br><br>
+        Dê uma olhada em nossa <a href="História.html" style="color:#ffe4b5; font-weight:bold;">História</a>, <a href="Pacotes.html" style="color:#ffe4b5; font-weight:bold;">Pacotes</a> e <a href="Atividades.html" style="color:#ffe4b5; font-weight:bold;">Atividades</a>. Caso se interesse, preencha o <a href="Formulário.html" style="color:#ffe4b5; font-weight:bold;">Formulário</a>.
+      </p>
+    </div>
+    <div id="clear"></div>
+    <div id="rodape">
+      <h6 style="text-align:center;">Av.Magalhães barata Nº1234 Belém-PA</h6>
+    </div>
+  </div>
+</body>
+</html>
